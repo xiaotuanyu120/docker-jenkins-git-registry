@@ -1,0 +1,8 @@
+version: '2'
+services:
+  reg:
+    image: 'registry:2'
+    container_name: reg
+    restart: always
+    volumes:
+      - '/data/registry:/var/lib/registry'
